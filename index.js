@@ -42,10 +42,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-const port = process.env.PORT || 5000;
-app.listen(port, () => {
-  console.log(`Server start with port ${port}`);
-});
 connectDB();
 async function connectDB() {
   const uri = process.env.APP_DB_URI;
