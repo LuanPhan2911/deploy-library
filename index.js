@@ -57,3 +57,5 @@ async function connectDB() {
   }
 }
 Scheduler.deleteInvalidToken();
+
+module.exports = app;
